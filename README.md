@@ -1,11 +1,26 @@
-# nodejs-package
+### smallestDivisor.js
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+Реализуйте тело функции `smallestDivisor`, используя итеративный процесс. Эта функция должна находить наименьший делитель заданного числа.
 
-## Setup
+Доп. условия: *число, передаваемое в функцию, больше нуля; делитель должен быть больше единицы, за исключением случая, когда аргументом является единица (наименьшим делителем которой является также единица)*.
+
+Например, наименьший делитель числа 15 это 3.
 
 ```
-make install
+smallestDivisor(15); // 3
+smallestDivisor(17); // 17
+
 ```
+
+Идея алгоритма:
+
+1.  Попробуйте разделить число на 2.
+2.  Если число делится без остатка, то это наименьший делитель.
+3.  Если нет, то попробуйте следующий делитель.
+4.  Если ничего не делит число без остатка, то переданное число является *простым*, так что его наименьший делитель --- оно само (не считая 1)
+
+#### Подсказка
+
+Вспомните про оператор `%` (modulus or остаток от деления) из урока 4. Он вычисляет остаток от деления одного операнда на другой. Например, `11%5` это 1, а `10%2` это 0.
+
+Так что если `x%y` это 0, то `y` делит `x` без остатка.
