@@ -1,11 +1,26 @@
-# nodejs-package
+### addDigits.js
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+Реализуйте и экспортируйте по умолчанию функцию `addDigits`, которая работает следующим образом:
 
-## Setup
+Дано неотрицательное целое число `num`. Складывать все входящие в него цифры до тех пор, пока не останется одна цифра.
+
+Для числа `38` процесс будет выглядеть так:
+
+1.  `3 + 8 = 11`
+2.  `1 + 1 = 2`
+
+Результат: 2
+
+Пример:
 
 ```
-make install
+addDigits(10); // 1
+addDigits(19); // 1
+addDigits(38); // 2
+addDigits(1259); // 8
+
 ```
+
+### Подсказка
+
+-   Выделите процесс суммирования цифр в числе в отдельную функцию
