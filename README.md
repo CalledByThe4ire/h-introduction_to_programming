@@ -1,11 +1,13 @@
-# nodejs-package
+### solution.js
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
-
-## Setup
+Реализуйте и экспортируйте по умолчанию функцию, которая делает заглавной первую букву каждого слова в предложении.
 
 ```
-make install
+solution('hello, world!'); // Hello, World!
+
 ```
+
+### Подсказки
+
+-   Вычисление длины строки: `length(str)`.
+-   Перевод строки/буквы в верхний регистр: `toUpperCase(str)`.
