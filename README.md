@@ -1,11 +1,34 @@
-# nodejs-package
+### reverse.js
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+Реализуйте и экспортируйте функцию по умолчанию, которая переворачивает строку задом наперед, используя рекурсию.
 
-## Setup
+Например:
 
 ```
-make install
+import reverse from './reverse';
+
+reverse('str'); // rts
+reverse('hexlet'); // telxeh
+
+```
+
+Попробуйте решить эту задачу используя рекурсивный процесс. Для этого вам понадобится функция `substr`.
+
+#### Подсказки
+
+Чтобы узнать длину строки, используйте функцию `length` из модуля `strings`:
+
+```
+import { length } from './strings';
+
+length('welcome'); // 7
+
+```
+
+Чтобы получить подстроку из строки, используйте функцию `substr` из модуля `strings`:
+
+```
+import { substr } from './strings';
+
+substr('foo', 1, 2); // 'oo';
 ```
