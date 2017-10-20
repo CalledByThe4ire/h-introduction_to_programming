@@ -1,11 +1,16 @@
-# nodejs-package
+### solution.js
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+Реализуйте и экспортируйте по умолчанию функцию, которая принимает на вход два аргумента - количество нулей и количество единиц, и определяет сколько есть способов размещения этих нулей и единиц так, что бы не было двух нулей идущих подряд.
 
-## Setup
+Например, определим все способы размещения двух нулей и двух единиц. Существует шесть возможных способов размещения: `0011`, `0101`, `0110`, `1001`, `1010`, `1100`. В трех случаях содержится два нуля, идущих подряд: `0011`, `1001` и `1100`. Вычитаем их из общего числа и получаем три возможных способа: `0101`, `0110` и `1010`. Ответ - `3`.
+
+Примеры использования:
 
 ```
-make install
+import withoutTwoZeros from './solution';
+
+withoutTwoZeros(2, 2); // 3
+withoutTwoZeros(1, 1); // 2
+withoutTwoZeros(1, 3), // 4
+withoutTwoZeros(2, 4); // 10
 ```
