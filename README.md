@@ -1,11 +1,12 @@
-# nodejs-package
+### diff.js
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+Напишите функцию `diff`, которая принимает два угла (integer), каждое от 0 до 360, и возвращает наименьшую разницу между ними.
 
-## Setup
+Примеры:
 
 ```
-make install
+diff(0, 45) === 45;         // не 315, а 45, потому что 45 меньше
+diff(0, 180) === 180;
+diff(0, 190) === 170;       // не 190, а 170, потому что 170 меньше
+diff(120, 280) === 160;
 ```
