@@ -1,11 +1,9 @@
-# nodejs-package
+### sumSquareDifference.js
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+Сумма квадратов первых десяти натуральных чисел это 12 + 22 + 32 + ... + 10 2 = 385.
 
-## Setup
+Квадрат суммы первых десяти натуральных чисел это (1 + 2 + 3 + ... + 10)2 = 552 = 3025.
 
-```
-make install
-```
+Разница между квадратом суммы и суммой квадратов первых десяти натуральных чисел: 3025 - 385 = 2640.
+
+Напишите функцию `sumSquareDifference`, которая принимает аргумент `n` и возвращает разницу между квадратом суммы и суммой квадратов первых `n`натуральных чисел.
