@@ -1,11 +1,21 @@
-# nodejs-package
+Функция Аккермана --- простой пример вычислимой функции, которая не является примитивно рекурсивной.
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+Она принимает два неотрицательных целых числа в качестве параметров и возвращает натуральное число, обозначается A(m,n). Эта функция растёт очень быстро, например, число A(4,4) настолько велико, что количество цифр в порядке этого числа многократно превосходит количество атомов в наблюдаемой части Вселенной.
 
-## Setup
+Функция Аккермана определяется рекурсивно для неотрицательных целых чисел m и n следующим образом:
+
+![Akkerman](https://i.imgur.com/NTlMEQb.png)
+
+### solution.js
+
+Реализуйте и экспортируйте по умолчанию функцию Аккермана `ackermann(m, n)`.
+
+Примеры использования:
 
 ```
-make install
+import ackermann from './solution';
+
+ackermann(0, 0); // 1
+ackermann(2, 1); // 5
+ackermann(2, 3); // 9
 ```
