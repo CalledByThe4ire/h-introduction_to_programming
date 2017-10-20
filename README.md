@@ -1,11 +1,13 @@
-# nodejs-package
+### Счастливые числа
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+Назовем счастливыми числами те, которые в результате ряда преобразований вида "сумма квадратов цифр" превратятся в единицу. Например:
 
-## Setup
+7 => 7^2 = 49, 49 => 4^2 + 9^2 = 16 + 81 = 97, 97 => 9^2 + 7^2 = 81 + 49 = 130, 130 => 1^2 + 3^2 + 0^2 = 10, 10 => 1^2 + 0^2 = 1.
 
-```
-make install
-```
+Вывод: исходное число 7 - счастливое.
+
+### isHappyNumber.js
+
+Реализуйте и экспортируйте по умолчанию функцию, которая должна вернуть `true`, если число счастливое, и `false`, если нет. Количество итераций процесса поиска необходимо ограничить числом 10.
+
+Воспользуйтесь вспомогательной функцией `sumDigits`, которая принимает на вход число и возвращает "сумму квадратов цифр" этого числа.
