@@ -1,11 +1,25 @@
-# nodejs-package
+ДНК и РНК это последовательности нуклеотидов.
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+Четыре нуклеотида в ДНК это аденин (A), цитозин (C), гуанин (G) и тимин (T).
 
-## Setup
+Четыре нуклеотида в РНК это аденин (A), цитозин (C), гуанин (G) и урацил (U).
+
+Цепь РНК составляется на основе цепи ДНК последовательной заменой каждого нуклеотида:
+
+-   `G` -> `C`
+-   `C` -> `G`
+-   `T` -> `A`
+-   `A` -> `U`
+
+### dnaToRna.js
+
+Реализуйте и экспортируйте функцию по умолчанию, которая принимает на вход цепь ДНК и возвращает соответствующую цепь РНК (совершает транскрипцию РНК).
+
+Если во входном параметре нет ни одного нуклеотида (т.е. передана пустая строка), то функция должна вернуть пустую строку. Если в переданной цепи ДНК встретится "незнакомый" нуклеотид (не являющийся одним из четырех перечисленных выше), то функция должна вернуть `null`.
 
 ```
-make install
+dnaToRna('ACGTGGTCTTAA'); // 'UGCACCAGAAUU'
+dnaToRna('CCGTA'); // 'GGCAU'
+dnaToRna(''); // ''
+dnaToRna('ACNTG'); // null
 ```
