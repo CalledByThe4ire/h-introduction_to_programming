@@ -1,11 +1,8 @@
-# nodejs-package
+### solution.js
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
-
-## Setup
+Реализуйте и экспортируйте по умолчанию функцию `reverseInt`, которая переворачивает цифры в переданном числе и возвращает новое число.
 
 ```
-make install
+reverseInt(13); // 31
+reverseInt(-123); // -321
 ```
