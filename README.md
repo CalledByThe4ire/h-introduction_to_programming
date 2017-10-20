@@ -1,11 +1,34 @@
-# nodejs-package
+### fizzBuzz.js
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+Реализуйте и экспортируйте по умолчанию функцию, которая выводит (`console.log`) в терминал числа в диапазоне от `begin` до `end`. При этом, вывод происходит по следующим правилам:
 
-## Setup
+-   Если число делится без остатка на `3` и на `5`, то вместо числа выводится слово `FizzBuzz`
+-   Если число делится без остатка на `5`, то вместо него выводится слово `Buzz`
+-   Если число делится без остатка на `3`, то вместо него выводится слово `Fizz`
+-   В остальных случаях выводится само число
+
+Функция принимает два параметра (`begin` и `end`), определяющих ("включительно") начало и конец диапазона. Если диапазон пуст (в случае, когда `begin > end`), то функция просто ничего не печатает.
+
+#### Пример
+
+Вызов функции:
 
 ```
-make install
+fizzBuzz(11, 20);
+
+```
+
+Вывод в терминале:
+
+```
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+Fizz
+19
+Buzz
 ```
