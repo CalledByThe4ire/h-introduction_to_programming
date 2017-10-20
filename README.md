@@ -1,11 +1,48 @@
-# nodejs-package
+Счастливым билетом называют такой билет с шестизначным номером, где сумма первых трех цифр равна сумме последних трех.
 
-[![Code Climate](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/gpa.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package)
-[![Build Status](https://travis-ci.org/hexlet-boilerplates/nodejs-package.svg?branch=master)](https://travis-ci.org/hexlet-boilerplates/nodejs-package)
+Например, билет с номером 385916 - счастливый, так как 3 + 8 + 5 = 9 + 1 + 6
 
-## Setup
+### isHappyTicket.js
+
+Напишите и экспортируйте по умолчанию функцию, проверяющую является ли номер счастливым (номер может быть как в числового, так и строкового типа: см. примеры ниже). Функция должна возвращать `true`, если билет счастливый, или `false`, если нет.
+
+Примеры использования:
 
 ```
-make install
+import isHappyTicket from './isHappyTicket';
+
+isHappyTicket(385916); // true
+isHappyTicket(231002); // false
+isHappyTicket(128722); // true
+isHappyTicket('054702'); // true
+
+```
+
+#### Подсказки
+
+Преобразовать число в строку можно с помощью функции `String`:
+
+```
+String(1234); // "1234"
+
+```
+
+Преобразовать строку в число можно с помощью функции `Number`:
+
+```
+Number("456"); // 456
+
+```
+
+Используйте функцию `length` из модуля `strings` чтобы узнать длину строки:
+
+```
+length('hello'); // 5
+
+```
+
+Используйте функцию `substr` из модуля `strings` чтобы получить подстроку из строки:
+
+```
+substr('hello', 0, 4); // "hell"
 ```
